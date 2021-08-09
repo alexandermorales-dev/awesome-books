@@ -10,7 +10,7 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
+- Javascript
 - Frameworks
 - Technologies used
 

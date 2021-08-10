@@ -3,12 +3,12 @@ const Book = function (title, author) {
   this.title = title;
   this.author = author;
 };
-const booksDisplaySection = document.querySelector("#booksDisplay");
-const form = document.querySelector("#submitBttn");
+const booksDisplaySection = document.querySelector('#booksDisplay');
+const form = document.querySelector('#submitBttn');
 let ids = 0;
 
 function localStorageAv() {
-  const test = "test";
+  const test = 'test';
   try {
     localStorage.setItem(test, test);
     localStorage.removeItem(test);
@@ -22,7 +22,7 @@ const storageAvailability = localStorageAv();
 
 function HandleInputData() {
   const jsonData = JSON.stringify(booksArray);
-  localStorage.setItem("books", jsonData);
+  localStorage.setItem('books', jsonData);
 }
 
 const CheckInput = () => {
@@ -35,8 +35,8 @@ const CheckInput = () => {
 const removeBook = function (div) {
   const removeBttn = document
     .getElementById(div.id)
-    .querySelector(".removeButton");
-  removeBttn.addEventListener("click", () => {
+    .querySelector('.removeButton');
+  removeBttn.addEventListener('click', () => {
     booksArray.splice(div.id, 1);
     CheckInput();
     div.remove();
@@ -44,11 +44,10 @@ const removeBook = function (div) {
 };
 
 const insertBookStructure = function (book, initialDisplay) {
-  const divSection = document.createElement("div");
-  divSection.innerHTML =
-    `<p>${book.title}</p>` +
-    `<p>${book.author}</p>` +
-    "<button class = 'removeButton'>Remove</button><br>";
+  const divSection = document.createElement('div');
+  divSection.innerHTML = `<p>${book.title}</p>`
+    + `<p>${book.author}</p>`
+    + "<button class = 'removeButton'>Remove</button><br>";
   if (!initialDisplay) {
     divSection.id = `${booksArray.length - 1}`;
   } else {
@@ -66,7 +65,7 @@ const createBook = function (titleValue, authorValue) {
   insertBookStructure(newBook, false);
 };
 
-form.addEventListener("click", (event) => {
+form.addEventListener('click', (event) => {
   const inputs = document.querySelectorAll("#bookForm input[type='text']");
   const titleValue = inputs[0].value;
   const authorValue = inputs[1].value;
@@ -82,14 +81,14 @@ const initializeBooks = function (data) {
 };
 
 function hasValue(input) {
-  if (input === "") {
+  if (input === '') {
     return false;
   }
   return true;
 }
 
 function CheckLocalInput() {
-  const data = JSON.parse(localStorage.getItem("books"));
+  const data = JSON.parse(localStorage.getItem('books'));
   if (data !== null) {
     initializeBooks(data);
     ids = 0;

@@ -1,8 +1,22 @@
 let booksArray = [];
-let Book = function (title, author) {
+const Book = function (title, author) {
   this.title = title;
   this.author = author;
 };
+const booksDisplaySection = document.querySelector('#booksDisplay');
+const form = document.querySelector('#submitBttn');
+let ids = 0;
+
+function localStorageAv() {
+  const test = 'test';
+  try {
+    localStorage.setItem(test, test);
+    localStorage.removeItem(test);
+    return true;
+  } catch (e) {
+    return false;
+  }
+  
 let form = document.querySelector("#submitBttn");
 form.addEventListener("click", (event) => {
   let inputs = document.querySelectorAll("#bookForm input[type='text']");

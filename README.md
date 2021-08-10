@@ -1,76 +1,35 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+Awesome Books
 
-# Awesome Books
+The project's goal is to apply JS objects concepts. "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
-> One paragraph statement about the project.
+Built With
 
-![screenshot](./app_screenshot.png)
+- HTML, CSS, JS
+- Linters, Node.js, Git, Flexbox
 
-Additional description about the project and its features.
-
-## Built With
-
-- Javascript
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+[Portolio Live Demo](https://alexandermorales-dev.github.io/awesome-books/)
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- On your terminal and run the following command to clone the repository
 
-### Setup
+  `git@github.com:alexandermorales-dev/awesome-books.git`
 
-### Install
+Authors
+👤 Alexander Morales
 
-### Usage
+GitHub: [@mateo951](https://github.com/alexandermorales-dev)
+Twitter: [@Alexand81099721]()
+LinkedIn: [@AlexanderMorales](https://www.linkedin.com/in/mateo-villagómez/)
+Email: [alexandermorales.n1@gmail.com](mailto:alexandermorales.n1@gmail.com)
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
+🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues](https://github.com/alexandermorales-dev/awesome-books/issues) page.
 
-## Show your support
-
+Show your support
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+📝 License
+This project is MIT licensed.

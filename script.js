@@ -16,7 +16,21 @@ function localStorageAv() {
   } catch (e) {
     return false;
   }
+
   
+const storageAvailability = localStorageAv();
+
+function HandleInputData() {
+  const jsonData = JSON.stringify(booksArray);
+  localStorage.setItem('books', jsonData);
+}
+
+const CheckInput = () => { // eslint-disable-line no-unused-vars
+  if (storageAvailability) {
+    HandleInputData();
+  }
+};
+
 let form = document.querySelector("#submitBttn");
 form.addEventListener("click", (event) => {
   let inputs = document.querySelectorAll("#bookForm input[type='text']");
